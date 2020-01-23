@@ -1,0 +1,136 @@
+$primary-color: white;
+$secondary-color: #0D70B5;
+
+.navbar {
+    background-color: white;
+}
+
+.flex, .flex-plain {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.nav-btn {
+    border-radius: 20px !important;
+    margin-right: 25px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+}
+
+.fa-search {
+    margin-left: 10px;
+}
+
+.hamburger {
+    color: black !important;
+}
+
+.text-header {
+    color: $primary-color;
+}
+
+.text-description {
+    font-weight: lighter;
+}
+
+.header-btn {
+    border: 0.75px solid #1E91BD !important;
+}
+
+.title {
+    border-bottom: 2px solid yellow;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.btn {
+    background-color: $secondary-color;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #1a8cff;
+}
+
+.jumbotron {
+    background-image: url("../images/background.png") !important;
+    //background-color: #0A5C98 !important;
+    background-size: cover;
+}
+
+.heading {
+    margin-bottom: 1rem;
+    color: $secondary-color;
+    border-bottom: solid 3px #80bfff;
+}
+
+.card {
+    padding: 17px;
+    margin-bottom: 1rem;
+}
+
+.impact {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #80bfff;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    height: 10rem;
+}
+
+.stat {
+    font-size: 26px;
+    color: $secondary-color;
+}
+
+.speak-icon {
+    height: 1.75rem;
+    margin-right: 4px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3.5px;
+}
+
+.download-icon {
+    height: 1rem;
+    margin-left: 4px;
+}
+
+.doctor-img {
+    margin-bottom: 1rem;
+    border: 1px solid #80bfff;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 568px) {
+    .learn-btn {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .download-btn {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .flex-plain {
+        display: flex;
+        flex-direction: horizontal !important;
+        align-items: flex-start !important;
+    }
+    .impact {
+        height: 7rem;
+    }
+}
