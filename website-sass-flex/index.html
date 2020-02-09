@@ -1,0 +1,120 @@
+---
+# this allows default.html layout to be used
+layout: default
+title: Home
+header_title_txt: The Canadian Cancer Clinical Trials Network (3CTN)
+header_description_txt: The Canadian Cancer Clinical Trials Network (3CTN) is a pan-Canadian initiative to improve recruitment and the efficiency and quality of academic cancer clinical trials in Canada.
+---
+<div class="row">
+    <div class="col-md-12 px-0">
+        <div class="jumbotron rounded-0">
+            <div class="container">
+                <h1 class="text-header title">{{ page.header_title_txt }}</h1>
+                <!-- hr align="left" class="col-md-3" -->
+                <p class="text-header text-description">{{ page.header_description_txt }}</p>
+                <button class="btn header-btn text-header learn-btn">
+                    <img class="speak-icon" src="assets/images/speak.png">
+                    Learn About Us  →
+                </button>
+                <button class="btn header-btn text-header">
+                    <img class="speak-icon" src="assets/images/speak.png">
+                    Explore the Network  →
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-lg-6 col-md-12 d-flex">
+            <div class="impact-div">
+                <h3 class="heading">Our Impact at a Glance</h3>
+                <p>What we achieved in 2018-2019:</p>
+                <div class="row d-flex">
+                    {% for item in site.data.impacts %}
+                    <div class="col-md-4 col-sm-12">
+                            <div class="impact">
+                                <p><span class="stat">{{ item.stat_txt }}</span><br>{{ item.text_txt }}</p>
+                            </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <button class="btn download-btn">
+                            Download Annual Report
+                            <img class="download-icon" src="assets/images/download.png">
+                        </button>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <button class="btn">
+                            See All Impact Metrics →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 d-flex">
+            <div class="how-div">
+                <h3 class="heading"> How We Deliver Impact</h3>
+                <p>The 3CTN's framework supports member cancer centres conducting research across the Network and engages patient voices at every step.</p>
+                <div class="row">
+                    {% for i in (1..3) %}
+                        <div class="col-md-4 col-sm-12">
+                            <img class="img-fluid doctor-img" src="/assets/images/doctor.jpg">
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="text-left">
+                    <button class="btn">
+                        Learn About How We Help →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--div class="row connected pt-5">
+    <div class="container">
+        <div class="col-12 px-0">
+            <h3 class="heading">Stay Connected</h3>
+        </div>
+    </div>
+</div>
+<div class="row connected">
+    <div class="container d-flex justify-content-between">
+        <div class="connect">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">NEW TRIAL: OCOG-2019-RHEAL: Randomized Trial of Hypofractionated LocoRegional Radiotherapy in Breast Cancer and Lymphedema (RHEAL)<br><br>NCT04228991<a href="https://t.co/LmoLHUqlFU">https://t.co/LmoLHUqlFU</a></p>&mdash; The Canadian Cancer Clinical Trials Network (3CTN) (@3ctnNews) <a href="https://twitter.com/3ctnNews/status/1225073316832083969?ref_src=twsrc%5Etfw">February 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="card connect">
+            <img class="card-img-top" src="/assets/images/event-pic.png" alt="Events">
+            <div class="card-body">
+                <h5 class="card-title">Q-ROC launches</h5>
+            </div>
+        </div>
+        <div class="card connect">
+            <img class="card-img-top" src="/assets/images/blog-pic.png" alt="Events">
+            <div class="card-body">
+                <h5 class="card-title">3CTN Continues</h5>
+            </div>
+        </div>
+    </div>
+</div-->
+<div>
+    <div class="row">
+        <div class="container">
+            <h3 class="heading">Our Partners</h3>
+            <p>Our Canada-wide initiative is made possible by contributions from our funders and through collaborations with organizations who share our vision for the cancer clinical trial landscape.</p>
+            <p><b>Funding Partners</b></p>
+            <div class="d-flex flex-wrap">
+                {% for item in site.data.partners %}
+                    <div class="partner-contain">
+                            <div class="{{item.class_name}}">
+                            </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <!--p><b>Collaborators</b></p-->
+        </div>
+    </div>
+</div>

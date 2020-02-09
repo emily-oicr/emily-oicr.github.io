@@ -1,0 +1,28 @@
+- name_txt: About Us
+  items_lst:
+    - How We Help
+    - Explore the Network
+- name_txt: Our Impact
+  items_lst:
+    - 3CTN Reports
+- name_txt: For Researchers
+  items_lst:
+    - Recruitment Best Practices Inventory
+    - Reporting Obligations
+    - Trial Portfolio FAQ
+    - Biospecimen Operations Training
+    - CTMS-EDGE Support
+    - Patient & Public Involvement
+- name_txt: For Patients
+  items_lst:
+    - About Clinical Trials
+    - Ask Me Campaign
+    - Patient Representative Orientation Package
+    - Patient Representative Community
+    - Patient Videos
+- name_txt: Stay Connected
+  items_lst:
+    - News
+    - Events
+    - Blog
+    - Involvement Opportunities
